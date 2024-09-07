@@ -219,11 +219,11 @@ describe('when parsing a gantt diagram it', function () {
     const expectedTitle = 'Gantt Diagram';
     const expectedAccDescription = 'Tasks for Q4';
     const ganttString = `gantt
-       accTitle: ${expectedTitle}
-       accDescr: ${expectedAccDescription}
-       dateFormat  YYYY-MM-DD
-       section Section
-       A task :a1, 2014-01-01, 30d\n`;
+      accTitle: ${expectedTitle}
+      accDescr: ${expectedAccDescription}
+      dateFormat  YYYY-MM-DD
+      section Section
+      A task :a1, 2014-01-01, 30d\n`;
 
     parser.parse(ganttString);
 
@@ -235,13 +235,13 @@ describe('when parsing a gantt diagram it', function () {
     const expectedAccDescription = `Tasks for Q4 row1
 row2`;
     const ganttString = `gantt
-       accTitle: ${expectedTitle}
-       accDescr {
-         ${expectedAccDescription}
-       }
-       dateFormat  YYYY-MM-DD
-       section Section
-       A task :a1, 2014-01-01, 30d\n`;
+      accTitle: ${expectedTitle}
+      accDescr {
+        ${expectedAccDescription}
+      }
+      dateFormat  YYYY-MM-DD
+      section Section
+      A task :a1, 2014-01-01, 30d\n`;
 
     parser.parse(ganttString);
 
