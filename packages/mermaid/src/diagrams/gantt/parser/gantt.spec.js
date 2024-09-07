@@ -164,7 +164,7 @@ describe('when parsing a gantt diagram it', function () {
       'title Adding gantt diagram functionality to mermaid\n' +
       'section Documentation\n' +
       'test task:' +
-      tags +
+      String(tags) +
       ', 2014-01-01, 2014-01-04';
 
     const allowedTags = ['active', 'done', 'crit', 'milestone'];
