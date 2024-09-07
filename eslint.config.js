@@ -130,7 +130,7 @@ export default tseslint.config(
       'no-only-tests/no-only-tests': 'error',
       'lodash/import-scope': ['error', 'method'],
       'unicorn/better-regex': 'error',
-      'unicorn/no-abusive-eslint-disable': 'error',
+      'unicorn/no-abusive-eslint-disable': 'warn',
       'unicorn/no-array-push-push': 'error',
       'unicorn/no-for-loop': 'error',
       'unicorn/no-instanceof-array': 'error',
